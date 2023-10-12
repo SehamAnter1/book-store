@@ -27,7 +27,7 @@ function Navbar() {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page">
-                <Link to={"/"} className="navLink text-dark">
+                <Link to={"home"} className="navLink text-dark">
                   {" "}
                   <strong>Home</strong>
                 </Link>
@@ -35,7 +35,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a className="nav-link active">
-                <Link to={"/about"} className="navLink text-dark">
+                <Link to={"about"} className="navLink text-dark">
                   <strong>About</strong>
                 </Link>
               </a>
