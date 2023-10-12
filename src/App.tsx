@@ -16,22 +16,13 @@ function App() {
       <Router>
         <FetchDataProvider>
           <Navbar />
-
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Header />
-                  <BookList />
-                </>
-              }
-            />
-            <Route path="/books/:bookId" element={<BookDetails />} />
+            <Route path="/book-store/home" element={<Header />} />
+            <Route path="/book-store/books/:bookId" element={<BookDetails />} />
+            <Route path="/book-store/about" element={<About />} />
             <Route path="*" element={<NotFound />} />{" "}
-            <Route path="/about" element={<About />}/>
           </Routes>
-          <Footer/>
+          <Footer />
         </FetchDataProvider>
       </Router>
     </>
